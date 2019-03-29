@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ира Ананьева-Рященко](https://up.htmlacademy.ru/adaptive/16/user/793863).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мусаэльян](https://htmlacademy.ru/profile/musaelyan).
 
 ---
 
