@@ -1,26 +1,29 @@
 <header class="header">
-  <h1 class="visually-hidden">Pink</h1>
-  <a class="header__logo" href="#">
-    <img class="header__logo-image" src="http://placehold.it/150x100" alt="PINK">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
-      <img src="http://placehold.it/150x100" alt="cancel">
-    </button>
-    <!-- <div class="main-nav__wrapper"> -->
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">html academy</a>
-          </li>
-        </ul>
-    <!-- </div> -->
+  <a class="header__logo">
+      <img class="header__logo-image" src="http://placehold.it/150x100" alt="PINK">
+    </a>
+  <nav class="menu menu--open">
+    <button class="menu__toggle--close" type="button">
+        <img src="http://placehold.it/150x100" alt="cancel">
+      </button>
+    <button class="menu__toggle--open" type="button">
+        <img src="http://placehold.it/150x100" alt="open">
+      </button>
+    <div class="menu__wrapper">
+      <ul class="menu__list--active">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">фотографии</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">конкурс</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">html academy</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+</header>

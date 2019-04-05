@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="visually-hidden">Pink</h1>
-      <a class="header__logo" href="#">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo">
         <img class="header__logo-image" src="http://placehold.it/150x100" alt="PINK">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+    <nav class="menu menu--open">
+      <button class="menu__toggle--close" type="button">
           <img src="http://placehold.it/150x100" alt="cancel">
         </button>
-        <!--<div class="main-nav__wrapper">-->
-            <ul class="main-nav__list menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="#">главная</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="#">фотографии</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="#">конкурс</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="#">html academy</a>
-              </li>
-            </ul>
-        <!--</div>-->
-      </nav>
-      <img class="header__photo" src="http://placehold.it/150x100" alt="hand with phone">
-      <!--Часть header или отдельно-->
-      <button class="app__download button" type="button">
-        <a href="#">Скачать приложение</a>
+      <button class="menu__toggle--open" type="button">
+          <img src="http://placehold.it/150x100" alt="open">
+        </button>
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__list--active">главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-page">
+    <h1 class="visually-hidden">Pink</h1>
+    <section class="intro">
+      <div class="intro__img-block">
+        <img class="intro__img" src="http://placehold.it/150x100" alt="hand with phone">
+      </div>
+      <button class="button" type="button">
+        <a class="button button--white" href="#">Скачать приложение</a>
       </button>
-      <!-- <div class="app__wrapper"> -->
-        <ul class="app__list option-list">
-          <li class="option-list__item">
-            <a href="#"></a>
+      <div class="intro__description apps">
+        <ul class="apps__list">
+          <li class="apps__item">
+            <a class="apps__link" href="#"></a>
             <span class="visually-hidden">apple</span>
             <svg></svg>
           </li>
-          <li class="option-list__item">
-            <a href="#"></a>
+          <li class="apps__item">
+            <a class="apps__link" href="#"></a>
             <span class="visually-hidden">android</span>
             <svg></svg>
           </li>
-          <li class="option-list__item">
-            <a href="#"></a>
+          <li class="apps__item">
+            <a class="apps__link" href="#"></a>
             <span class="visually-hidden">windows</span>
             <svg></svg>
           </li>
         </ul>
-        <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      <!-- </div> -->
-    </header>
-    <main class="main">
-      <section class="features">
-        <h2 class="features__intro">
-          <div class="features__tagline">
+        <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__header">
+        <h2 class="visually-hidden">Преимущества</h2>
+      </div>
+      <h2 class="features__intro">
+          <p class="features__tagline">
             Устали от серости мегаполиса?
-          </div>
-          <div class="features__tagline">
+          </p>
+          <p class="features__tagline">
             Нам есть, что вам предложить!
-          </div>
+          </p>
         </h2>
-        <ul class="features__list site-list">
-          <li class="site-list__item">
-            <h3 class="site-lists__item features-title">Поднимает настроение</h3>
-            <p class="site-list__item features-desc">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="site-list__item">
-            <h3 class="site-list__item features__title">Меняет мир вокруг</h3>
-            <p class="site-list__item features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="site-list__item">
-            <h3 class="site-list__item features__title">Заводит новых друзей</h3>
-            <p class="site-list__item features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="features__img">
-          <img src="http://placehold.it/150x100" alt="phone screen">
-        </div>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <p class="features__description">Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <div class="features__img">
+        <img src="http://placehold.it/150x100" alt="phone screen">
+      </div>
     </section>
     <section class="review">
       <div class="review__wrapper slider">
@@ -158,11 +169,13 @@
         </ul>
       </div>
     </section>
-    </main>
-    <footer class="footer__index">
-      <section class="footer__map map-iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sfi!4v1554296162292!5m2!1sen!2sfi" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </section>
-    </footer>
-  </body>
+  </main>
+  <footer class="footer__index">
+    <section class="footer__map map-iframe">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sfi!4v1554296162292!5m2!1sen!2sfi"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+  </footer>
+</body>
+
 </html>
