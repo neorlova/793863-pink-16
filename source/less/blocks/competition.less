@@ -1,0 +1,68 @@
+@import "variables.less";
+
+.competition {
+  text-transform: uppercase;
+  .competition__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .competition__achievement-list {
+    list-style: none;
+    padding-left: 0px;
+  }
+  .competition__apps-list {
+    list-style: none;
+    padding-left: 0px;
+  }
+  .competition__title {
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: @main-color;
+  }
+  .competition__label {
+    color: @main-color;
+  }
+  .competition__input {
+    font-size: 18px;
+    height: 59px;
+    width: 276px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .competition__input--feedback {
+    text-align: center;
+    border: 2px solid #e5e5e5;
+    height: 197px;
+    width: 276px;
+  }
+  .competition__checkbox {
+    display: none;
+  }
+  .competition__checkbox:checked + .competition__checkbox-label::before {
+    background-image: url(../img/icon-yes.svg);
+    width: 35px;
+    background-size: 35px 35px;
+    background-color: white;
+
+  }
+  .competition__full-name,
+  .competition__contacts,
+  .competition__feedback {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  .competition__button--green {
+    color: white;
+    font-size: 18px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    padding: 22px 46px;
+    margin: 52px 46px 22px;
+    text-align: center;
+    background-color: #2aab6d;
+  }
+  .competition__notification {
+
+  }
+}

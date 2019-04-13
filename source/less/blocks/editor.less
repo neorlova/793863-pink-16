@@ -1,0 +1,50 @@
+@import "variables.less";
+
+.editor {
+  .editor__title {
+    text-align: center;
+    margin: 50px 35px;
+  }
+  .editor__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .editor__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .editor__item{
+    margin-left: 15px
+  }
+  .editor__checkbox {
+    display: none;
+  }
+  .editor__controls {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 73px;
+  }
+  .editor__scale {
+    height: 2px;
+    background: black;
+    width: 240px;
+  }
+  .editor__range-toggle {
+    position: absolute;
+    top: -8px;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 2px solid @main-color;
+    border-radius: 50%;
+  }
+  .editor__download {
+
+  }
+}
