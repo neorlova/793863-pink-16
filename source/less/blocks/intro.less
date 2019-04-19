@@ -1,10 +1,10 @@
-@import "variables.less";
+@import "../variables.less";
 
-.intro {
+
   .intro__title {
     font-size: 24px;
     font-weight: 300;
-    color: white;
+    color: @text-color-alt;
     text-align: center;
     margin: 0;
     padding: 100px 76px;
@@ -13,7 +13,23 @@
     background-size: cover;
   }
   .intro__description {
-    margin: 50px 55px 40px;
     text-align: center;
   }
-}
+
+  .intro--index {
+    background-color: @bg-color;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+    .intro--index .intro__img-block {
+    background-image: url(/img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 28px;
+  }
+
+  .intro__img {
+    display: block;
+  }

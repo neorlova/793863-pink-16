@@ -1,15 +1,27 @@
-@import "variables.less";
+@import "../variables.less";
 
-.competition {
-  text-transform: uppercase;
+  .competition {
+    text-transform: uppercase;
+  }
   .competition__row {
     display: flex;
     flex-direction: column;
   }
+  .competition__achievement {
+    display: block;
+    padding-left: 22px;
+    background-color: @alt-bg-color;
+  }
+
   .competition__achievement-list {
     list-style: none;
     padding-left: 0px;
   }
+
+  .competition__achievement-item {
+    margin-bottom: 64px;
+  }
+
   .competition__apps-list {
     list-style: none;
     padding-left: 0px;
@@ -19,6 +31,7 @@
     font-weight: 300;
     text-align: center;
     color: @main-color;
+    padding-left: 0;
   }
   .competition__label {
     color: @main-color;
@@ -36,16 +49,82 @@
     height: 197px;
     width: 276px;
   }
-  .competition__checkbox {
+
+  .checkbox {
+  position: relative;
+  padding-left: 20px;
+}
+
+.competition__checkbox {
+  display: none;
+}
+
+.competition__checkbox-label {
+  display: flex;
+  align-items: center;
+
+  .competition__checked {
     display: none;
   }
-  .competition__checkbox:checked + .competition__checkbox-label::before {
-    background-image: url(../img/icon-yes.svg);
-    width: 35px;
-    background-size: 35px 35px;
-    background-color: white;
+}
 
+.competition__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: @text-color-alt;
+  margin-right: 33px;
+}
+
+.competition__checkbox:checked + .competition__checkbox-label {
+  fill: @main-color;
+  .competition__checked {
+    display: block;
   }
+}
+
+.competition__selection-label {
+  display: flex;
+  align-items: center;
+  padding-left: 33px;
+  margin-bottom: 57px;
+  font-size: 18px;
+}
+
+.competition__radio-button {
+  display: none;
+}
+
+.competition__radio-checked {
+  display: none;
+  height: 11px;
+  width: 11px;
+  background-color: @main-color;
+  border-radius: 50%;
+}
+
+.competition__radio-button:checked + .competition__selection-label {
+  .competition__radio-checked {
+    display: block;
+  }
+}
+
+.competition__radio-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  width: 37px;
+  border: 2px solid @alt-bg-color;
+  border-radius: 50%;
+  background-color: @text-color-alt;
+  margin-right: 33px;
+
+}
+
+
   .competition__full-name,
   .competition__contacts,
   .competition__feedback {
@@ -53,7 +132,7 @@
     margin-right: 22px;
   }
   .competition__button--green {
-    color: white;
+    color: @text-color-alt;
     font-size: 18px;
     font-weight: 700px;
     text-transform: uppercase;
@@ -65,4 +144,3 @@
   .competition__notification {
 
   }
-}

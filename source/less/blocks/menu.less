@@ -1,24 +1,47 @@
+@import "../variables.less";
+
 .menu {
   font-weight: bold;
   color: white;
-  background-color: #1d2631;
+  background-color: @text-color-main;
   display: flex;
   flex-direction: column;
+}
+
   .menu__list {
+    display: none;
     list-style: none;
     width: 100%;
-    padding-left: 0px;
-    margin-bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+
+   .menu--open & {
+    display: block;
   }
+}
+
   .menu__item {
     display: flex;
     height: 65px;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 black;
+
+
+    @media (min-width: @tablet){
+      text-transform: none;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
   }
+
   .menu__link {
     text-decoration: none;
-    color: white;
+    color: @text-color-alt;
     text-transform: uppercase;
   }
-}

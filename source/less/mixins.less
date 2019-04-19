@@ -1,0 +1,15 @@
+.inner() {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  .desktop({
+    max-width: 1200px;
+    padding: 0 130px;
+  });
+}
+
+.desktop (@rules) {
+  @media (min-width:  1200px) {
+    @rules();
+  }
+}
