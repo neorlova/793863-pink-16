@@ -1,21 +1,35 @@
-@import "../variables.less";
-
 .header {
   background-color: @text-color-main;
   padding: 0;
   position: relative;
 }
 
-  .header__logo {
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  height: 22px;
+  width: 78px;
+
+  @media (min-width: @tablet-width){
+    height: 40px;
+    width: 147px;
+  }
+}
+
+.header__logo-glasses {
+  display: none;
+
+  @media (min-width: @tablet-width){
     display: block;
-    padding: 22px;
+    fill: @text-color-alt;
 
   }
+}
 
-  .header__topbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: @text-color-main;
-    border-bottom: 1px solid black;
-    height: 65px;
-  }
+.header__topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: @text-color-main;
+  border-bottom: 1px solid black;
+  height: 65px;
+}

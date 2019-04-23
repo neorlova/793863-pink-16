@@ -1,15 +1,57 @@
 .inner() {
-  padding: 0 20px;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 
-  .desktop({
-    max-width: 1200px;
-    padding: 0 130px;
-  });
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .desktop (@rules) {
   @media (min-width:  1200px) {
     @rules();
   }
+}
+
+.competition__inner (){
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+
+
+// width: 276px;
+// border: 2px solid #e5e5e5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.with-border() {
+  border: 2px solid @alt-bg-color;
 }

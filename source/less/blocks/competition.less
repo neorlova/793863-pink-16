@@ -1,58 +1,61 @@
-@import "../variables.less";
+.competition {
+  text-transform: uppercase;
+}
 
-  .competition {
-    text-transform: uppercase;
-  }
-  .competition__row {
-    display: flex;
-    flex-direction: column;
-  }
-  .competition__achievement {
-    display: block;
-    padding-left: 22px;
-    background-color: @alt-bg-color;
-  }
+.competition__row {
+  display: flex;
+  flex-direction: column;
+}
 
-  .competition__achievement-list {
-    list-style: none;
-    padding-left: 0px;
-  }
+.competition__achievement {
+  display: block;
+  padding-left: 22px;
+  background-color: @alt-bg-color;
+}
 
-  .competition__achievement-item {
-    margin-bottom: 64px;
-  }
+.competition__achievement-list {
+  list-style: none;
+  padding-left: 0px;
+}
 
-  .competition__apps-list {
-    list-style: none;
-    padding-left: 0px;
-  }
-  .competition__title {
-    line-height: 30px;
-    font-weight: 300;
-    text-align: center;
-    color: @main-color;
-    padding-left: 0;
-  }
-  .competition__label {
-    color: @main-color;
-  }
-  .competition__input {
-    font-size: 18px;
-    height: 59px;
-    width: 276px;
-    border: 2px solid #e5e5e5;
-  }
+.competition__achievement-item {
+  margin-bottom: 64px;
+}
 
-  .competition__input--feedback {
-    text-align: center;
-    border: 2px solid #e5e5e5;
-    height: 197px;
-    width: 276px;
-  }
+.competition__apps-list {
+  list-style: none;
+  padding-left: 0px;
+}
 
-  .checkbox {
-  position: relative;
-  padding-left: 20px;
+.competition__title {
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: @main-color;
+  padding-left: 0;
+}
+
+.competition__label {
+  color: @main-color;
+}
+
+.competition__input {
+  font-size: 18px;
+  height: 59px;
+  width: 276px;
+  border: 2px solid #e5e5e5;
+}
+
+.competition__input--feedback {
+  text-align: center;
+  height: 197px;
+  width: 276px;
+  border: 2px solid #e5e5e5;
+}
+
+.checkbox {
+position: relative;
+padding-left: 20px;
 }
 
 .competition__checkbox {
@@ -62,6 +65,7 @@
 .competition__checkbox-label {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 
   .competition__checked {
     display: none;
@@ -72,6 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   height: 35px;
   width: 35px;
   background-color: @text-color-alt;
@@ -88,6 +93,7 @@
 .competition__selection-label {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   padding-left: 33px;
   margin-bottom: 57px;
   font-size: 18px;
@@ -115,32 +121,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   height: 37px;
   width: 37px;
   border: 2px solid @alt-bg-color;
   border-radius: 50%;
   background-color: @text-color-alt;
   margin-right: 33px;
-
 }
 
 
-  .competition__full-name,
-  .competition__contacts,
-  .competition__feedback {
-    margin-left: 22px;
-    margin-right: 22px;
-  }
-  .competition__button--green {
-    color: @text-color-alt;
-    font-size: 18px;
-    font-weight: 700px;
-    text-transform: uppercase;
-    padding: 22px 46px;
-    margin: 52px 46px 22px;
-    text-align: center;
-    background-color: #2aab6d;
-  }
-  .competition__notification {
+.competition__full-name,
+.competition__contacts,
+.competition__feedback {
+  margin-left: 22px;
+  margin-right: 22px;
+}
 
-  }
+.competition__button--green {
+  color: @text-color-alt;
+  font-size: 18px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  padding: 22px 46px;
+  margin: 52px 46px 22px;
+  text-align: center;
+  background-color: #2aab6d;
+}
+
+.competition__notification {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.competition__required {
+  color: @main-color;
+}

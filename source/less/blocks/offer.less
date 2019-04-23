@@ -1,13 +1,19 @@
-@import "../variables.less";
 
 .offer {
   background-color: @alt-bg-color;
 }
 
 .offer__inner {
-  width: 276px;
   margin: 0 auto;
-  transform: translateX(-100%);
+
+  @media (min-width: @tablet-width){
+    padding-top: 84px;
+    padding-bottom: 70px;
+  }
+  @media (min-width: desktop-width){
+    padding-top: 146px;
+    padding-bottom: 98px;
+  }
 }
 
 .offer__wrapper {
@@ -15,8 +21,18 @@
 }
 
 .offer__table {
-  width: 1104px;
+  margin: 0 auto;
   border-collapse: collapse;
+
+  @media (min-width: tablet-width){
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: desktop-width){
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .offer__title {
@@ -36,8 +52,24 @@
 .offer__header {
   background-color: @text-color-main;
   height: 94px;
+  width: 276px;;
   border-left: 1px solid @text-color-alt;
   border-right: 1px solid @text-color-alt;
+  position: relative;
+
+  @media (min-width: @tablet-width){
+    width: 152px;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 233px;
+  }
+}
+
+.offer__hit {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .offer__description {
@@ -47,13 +79,47 @@
   text-transform: uppercase;
   height: 59px;
   width: 276px;
-  border: 2px solid @alt-bg-color;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  padding-left: 20px;
+
+
+  @media (min-width: @tablet-width){
+    width: 152px;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 234px;
+  }
 }
 
 .offer__img {
   background-color: @text-color-alt;
+  border: 2px solid #e5e5e5;
+  text-align: center;
   width: 276px;
-  border: 2px solid @alt-bg-color;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width){
+    width: 152px;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 233px;
+  }
+}
+
+.offer__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width){
+    display: none;
+  }
+  @media (min-width: @desktop-width){
+    display: none;
+  }
 }
 
 .offer__checked {
@@ -61,6 +127,7 @@
   width: 31px;
   height: 21px;
 }
+
 .offer__unchecked {
   fill: #f25b26;
   width: 27px;

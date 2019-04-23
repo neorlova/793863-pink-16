@@ -1,0 +1,45 @@
+.research {
+  display: none;
+
+  @media(min-width: @tablet-width){
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media(min-width: @desktop-width) {
+    background-color: @alt-bg-color;
+  }
+}
+
+.research__wrapper {
+  display: block;
+  margin-left: 72px;
+  width: 320px;
+
+  @media(min-width: @desktop-width){
+    display: block;
+    max-width: 580px;
+  }
+}
+
+.research__img {
+  fill: #dedede;
+  height: 276px;
+  width: 238px;
+}
+
+.research__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.research__description {
+  color: @text-color-main;
+}
+
+.research__link {
+  color: @main-color;
+}
