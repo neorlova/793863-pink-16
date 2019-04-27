@@ -1,12 +1,18 @@
-.editor__title {
-  text-align: center;
-  margin: 50px 35px;
-}
-
 .editor__form {
+  background-color: @alt-bg-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: @tablet-width){
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.editor__title {
+  text-align: center;
+  margin: 50px 35px;
 }
 
 .editor__list {
@@ -22,6 +28,21 @@
   margin-left: 15px
 }
 
+.editor__img {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.editor__icon--crop {
+  fill: @main-color;
+}
+
+.editor__icon--fill,
+.editor__icon--contrast {
+  fill: #bec2c7;
+}
+
 .editor__checkbox {
   display: none;
 }
@@ -31,6 +52,11 @@
   justify-content: center;
   position: relative;
   margin-bottom: 73px;
+
+  &--fill,
+  &--contrast {
+    display: none;
+  }
 }
 
 .editor__scale {
@@ -47,4 +73,31 @@
   background: white;
   border: 2px solid @main-color;
   border-radius: 50%;
+}
+
+.editor__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editor__download {
+  border: 3px solid @main-color;
+  border-radius: 25px;
+  margin-bottom: 12px;
+}
+
+.editor__cancel {
+  border: 3px solid #dddfe0;
+  border-radius: 25px;
+  margin-bottom: 41px;
+}
+
+.editor__link {
+  text-decoration: none;
+  color: #e3e4e4;
+
+  &--active {
+    color: @main-color;
+  }
 }

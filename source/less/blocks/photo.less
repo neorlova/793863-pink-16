@@ -1,17 +1,40 @@
-.photo__author {
-  display: inline-block;
-  font-weight: 700;
+&--main {
+  @media (min-width: @tablet-width){
+    display: block;
+  }
 }
+
+
 
 .photo__info {
   background-color: #f2f2f2;
-  padding: 25px 20px 55px;
+  padding: 17px 25px 23px 28px;
   margin-bottom: 20px;
+}
+
+.photo__author {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__description {
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .photo__likes {
   color: @main-color;
   display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 12px;
 }
 
 .photo__link {
@@ -20,6 +43,10 @@
 
 .photo--main .photo__link {
   margin: 0 -20px;
+
+  @media (min-width: @tablet-width){
+    position: relative;
+  }
 }
 
 .photo__img {
@@ -37,6 +64,8 @@
 
 .photo__like-button {
   display: inline-block;
+  padding: 0;
+
 }
 
 .photo__award {
@@ -49,4 +78,9 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 13px 20px 11px;
+
+  @media (min-width: @tablet-width){
+    top: 57px;
+    right: 130px;
+  }
 }

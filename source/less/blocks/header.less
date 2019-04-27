@@ -16,14 +16,30 @@
   }
 }
 
-.header__logo-glasses {
+.header__logo-tablet {
   display: none;
 
   @media (min-width: @tablet-width){
     display: block;
     fill: @text-color-alt;
-
   }
+
+  @media (min-width: @desktop-width){
+    display: none;
+  }
+}
+
+.header__logo-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width){
+    display: none;
+  }
+
+  @media (min-width: @desktop-width){
+    display: block;
+  }
+
 }
 
 .header__topbar {

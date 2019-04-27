@@ -1,11 +1,15 @@
-
-.features__wrapper {
+.features {
   background-color: @alt-bg-color;
+}
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width){
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     margin: 0 auto;
   }
@@ -13,12 +17,12 @@
   @media (min-width: @desktop-width){
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
 .features__header {
   margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 .features__tagline {
@@ -26,7 +30,9 @@
   font-size: 24px;
   color: @text-color-main;
   text-align: center;
-  margin-bottom: 30px;
+  background-color: @text-color-alt;
+  padding-bottom: 30px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width){
     text-align: center;
@@ -61,7 +67,9 @@
 
 .features__item {
   max-width: 259px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:last-child {
     margin-bottom: 35px;
@@ -85,6 +93,7 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+    order: 2;
   }
 }
 
@@ -94,53 +103,55 @@
   @media (min-width: @desktop-width){
     font-size: 18px;
     line-height: 30px;
+    order: 3;
   }
 }
 
-.features__img {
-  display: block;
-  text-align: center;
-  height: 278px;
-  overflow: hidden;
-
-  @media (min-width: @tablet-width){
-    order: 1;
-    overflow: hidden;
-    height: 481px;
-  }
-
+features__img {
   @media (min-width: @desktop-width){
-    overflow: hidden;
-    height: 302px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    order: 1
   }
 }
 
 .features__screenshot {
-
-  @media (min-width: @tablet-width){
-    width: 268px;
-    height: 547px;
-  }
-
-  @media (min-width: @desktop-width){
-    width: 186px;
-    height: 382px;
-  }
-}
-
-.features__screenshot--desktop{
   display: none;
 
     @media (min-width: @desktop-width){
       display: block;
-      width: 200px;
-      height: 296px;
+      width: 100%;
+      order: 1;
       &:nth-child(2) {
         margin-left: 130px;
         margin-right: 130px;
       }
     }
+}
+
+.features__hero {
+  height: 277px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width){
+  height: 100%;
+  }
+}
+
+.features__hero-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width){
+    display: none;
+  }
+}
+
+.features__hero-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width){
+    display: block;
+  }
+
+  @media (min-width: @desktop-width){
+    display: none;
+  }
 }
