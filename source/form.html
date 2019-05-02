@@ -101,160 +101,165 @@
           <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
-      <section class="cta">
-        <p class="cta__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      </section>
       <section class="competition">
         <div class="competition__inner">
+          <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
           <form class="competition__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="competition__full-name">
-              <div class="competition__row">
-                <label class="competition__label" for="surname-field">Фамилия:</label>
-                <input class="competition__input" type="text" id="surname-field" name="fill-in" placeholder="Укажите фамилию *" required>
+              <div class="competition__full-name block">
+                <div class="competition__row competition__row--full-name">
+                  <label class="competition__label" for="surname-field">Фамилия:</label>
+                  <input class="competition__field" type="text" id="surname-field" name="fill-in" placeholder="Укажите фамилию *" required>
+                </div>
+                <div class="competition__row competition__row--full-name">
+                  <label class="competition__label" for="name-field">Имя:</label>
+                  <input class="competition__field" type="text" id="name-field" name="fill-in" placeholder="Введите ваше имя *" required>
+                </div>
+                <div class="competition__row competition__row--full-name">
+                  <label class="competition__label" for="middle-name-field">Отчество:</label>
+                  <input class="competition__field" type="text" id="middle-name-field" name="fill-in" placeholder="Ну и отчество тоже">
+                </div>
               </div>
-              <div class="competition__row">
-                <label class="competition__label" for="name-field">Имя:</label>
-                <input class="competition__input" type="text" id="name-field" name="fill-in" placeholder="Введите ваше имя *" required>
+              <div class="competition__achievement block">
+                <div class="competition__row">
+                  <h3 class="competition__title competition__title--main">Ваши безбашенные достижения в путешествии</h3>
+                  <ul class="competition__achievement-list">
+                    <li class="competition__achievement-item">
+                      <div class="checkbox">
+                        <input class="competition__checkbox" type="checkbox" id="selfie-check" name="options" value="selfie" checked>
+                        <label class="competition__checkbox-label" for="selfie-check">
+                        <div class="competition__box">
+                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                          </svg>
+                        </div>
+                          Сделал селфи с акулой
+                        </label>
+                      </div>
+                    </li>
+                    <li class="competition__achievement-item">
+                      <div class="checkbox">
+                        <input class="competition__checkbox" type="checkbox" id="sunburn" name="options" value="sunburn" checked>
+                        <label class="competition__checkbox-label" for="sunburn">
+                        <div class="competition__box">
+                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                          </svg>
+                        </div>
+                          Обгорел на пляже
+                        </label>
+                      </div>
+                    </li>
+                    <li class="competition__achievement-item">
+                      <div class="checkbox">
+                        <input class="competition__checkbox" type="checkbox" id="chuck" name="options" value="chuck">
+                        <label class="competition__checkbox-label" for="chuck">
+                        <div class="competition__box">
+                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                          </svg>
+                        </div>
+                          Видел Чака Норриса
+                        </label>
+                      </div>
+                    </li>
+                    <li class="competition__achievement-item">
+                      <div class="checkbox">
+                        <input class="competition__checkbox" type="checkbox" id="souvenir" name="options" value="souvenir">
+                        <label class="competition__checkbox-label" for="souvenir">
+                          <div class="competition__box">
+                            <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                            </svg>
+                          </div>
+                          Накупил сувениров
+                        </label>
+                      </div>
+                    </li>
+                    <li class="competition__achievement-item">
+                      <div class="checkbox">
+                        <input class="competition__checkbox" type="checkbox" id="tower" name="options" value="tower" checked>
+                        <label class="competition__checkbox-label" for="tower">
+                          <div class="competition__box">
+                            <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                              <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                            </svg>
+                          </div>
+                          Удержал башню
+                        </label>
+                      </div>
+                    </li>
+                    <li class="competition__achievement-item">
+                      <div class="checkbox">
+                        <input class="competition__checkbox" type="checkbox" id="hotel" name="options" value="hotel">
+                        <label class="competition__checkbox-label" for="hotel">
+                        <div class="competition__box">
+                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                          </svg>
+                        </div>
+                          Разгромил отель
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="competition__row">
-                <label class="competition__label" for="middle-name-field">Отчество:</label>
-                <input class="competition__input" type="text" id="middle-name-field" name="fill-in" placeholder="Ну и отчество тоже">
+              <div class="competition__contacts block">
+                <h3 class="competition__title competition__title--alt competition__title--contacts">Контактная информация</h3>
+                <div class="competition__container competition__container--contacts">
+                  <div class="competition__row competition__row--contacts">
+                    <label class="competition__label" for="phone">номер телефона</label>
+                    <input class="competition__field competition__field--contacts" type="text" id="phone" name="contacts" placeholder="Номер, пожалуйста">
+                  </div>
+                  <div class="competition__row competition__row--contacts">
+                    <label class="competition__label" for="email">адрес почты</label>
+                    <input class="competition__field competition__field--contacts" type="text" id="email" name="contacts" placeholder="Введите почту *" required>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="competition__achievement">
-              <div class="competition__row">
-                <h3 class="competition__title">Ваши безбашенные <br> достижения в путешествии</h3>
-                <ul class="competition__achievement-list">
-                  <li class="competition__achievement-item">
-                    <div class="checkbox">
-                      <input class="competition__checkbox" type="checkbox" id="selfie-check" name="options" value="selfie" checked>
-                      <label class="competition__checkbox-label" for="selfie-check">
-                        <div class="competition__box">
-                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                          </svg>
-                        </div>
-                        Сделал селфи с акулой
-                      </label>
+              <div class="competition__apps block">
+                <h3 class="competition__title competition__title--main">С каким приложением путешествовали?</h3>
+                <ul class="competition__apps-list">
+                  <li class="competition__apps-item">
+                    <input class="competition__radio-button" type="radio" id="iOS" name="system" value="iOS" checked>
+                    <label class="competition__selection-label" for="iOS">
+                    <div class="competition__radio-box">
+                      <div class="competition__radio-checked"></div>
                     </div>
+                      Pink для iOS
+                    </label>
                   </li>
-                  <li class="competition__achievement-item">
-                    <div class="checkbox">
-                      <input class="competition__checkbox" type="checkbox" id="sunburn" name="options" value="sunburn" checked>
-                      <label class="competition__checkbox-label" for="sunburn">
-                        <div class="competition__box">
-                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                          </svg>
-                        </div>
-                        Обгорел на пляже
-                      </label>
+                  <li class="competition__apps-item">
+                    <input class="competition__radio-button" type="radio" id="android" name="system" value="android">
+                    <label class="competition__selection-label" for="android">
+                    <div class="competition__radio-box">
+                      <div class="competition__radio-checked"></div>
                     </div>
+                      Pink на Android
+                    </label>
                   </li>
-                  <li class="competition__achievement-item">
-                    <div class="checkbox">
-                      <input class="competition__checkbox" type="checkbox" id="chuck" name="options" value="chuck">
-                      <label class="competition__checkbox-label" for="chuck">
-                        <div class="competition__box">
-                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                          </svg>
-                        </div>
-                        Видел Чака Норриса
-                      </label>
+                  <li class="competition__apps-item">
+                    <input class="competition__radio-button" type="radio" id="windows" name="system" value="windows">
+                    <label class="competition__selection-label" for="windows">
+                    <div class="competition__radio-box">
+                      <div class="competition__radio-checked"></div>
                     </div>
-                  </li>
-                  <li class="competition__achievement-item">
-                    <div class="checkbox">
-                      <input class="competition__checkbox" type="checkbox" id="souvenir" name="options" value="souvenir">
-                      <label class="competition__checkbox-label" for="souvenir">
-                        <div class="competition__box">
-                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                          </svg>
-                        </div>
-                        Накупил сувениров
-                      </label>
-                    </div>
-                  </li>
-                  <li class="competition__achievement-item">
-                    <div class="checkbox">
-                      <input class="competition__checkbox" type="checkbox" id="tower" name="options" value="tower" checked>
-                      <label class="competition__checkbox-label" for="tower">
-                        <div class="competition__box">
-                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                          </svg>
-                        </div>
-                        Удержал башню
-                      </label>
-                    </div>
-                  </li>
-                  <li class="competition__achievement-item">
-                    <div class="checkbox">
-                      <input class="competition__checkbox" type="checkbox" id="hotel" name="options" value="hotel">
-                      <label class="competition__checkbox-label" for="hotel">
-                        <div class="competition__box">
-                          <svg class="competition__checked" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                          </svg>
-                        </div>
-                        Разгромил отель
-                      </label>
-                    </div>
+                      Windows Phone
+                    </label>
                   </li>
                 </ul>
-              </div>
             </div>
-            <div class="competition__contacts">
-              <div class="competition__row">
-                <label class="competition__label" for="phone">номер телефона</label>
-                <input class="competition__input" type="text" id="phone" name="contacts" placeholder="Номер, пожалуйста">
-              </div>
-                <label class="competition__label" for="email">адрес почты</label>
-              <input class="competition__input" type="text" id="email" name="contacts" placeholder="Введите почту *" required>
+            <div class="competition__feedback block">
+              <h3 class="competition__title competition__title--alt">Опишите свои эмоции</h3>
+              <textarea class="competition__field competition__field--feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
-            <div class="competition__apps">
-              <h3 class="competition__title">С каким приложением путешествовали?</h3>
-              <ul class="competition__apps-list">
-                <li class="competition__apps-item">
-                  <input class="competition__radio-button" type="radio" id="iOS" name="system" value="iOS" checked>
-                  <label class="competition__selection-label" for="iOS">
-                    <div class="competition__radio-box">
-                      <div class="competition__radio-checked"></div>
-                    </div>
-                    Pink для iOS
-                  </label>
-                </li>
-                <li class="competition__apps-item">
-                  <input class="competition__radio-button" type="radio" id="android" name="system" value="android">
-                  <label class="competition__selection-label" for="android">
-                    <div class="competition__radio-box">
-                      <div class="competition__radio-checked"></div>
-                    </div>
-                    Pink на Android
-                  </label>
-                </li>
-                <li class="competition__apps-item">
-                  <input class="competition__radio-button" type="radio" id="windows" name="system" value="windows">
-                  <label class="competition__selection-label" for="windows">
-                    <div class="competition__radio-box">
-                      <div class="competition__radio-checked"></div>
-                    </div>
-                    Windows Phone
-                  </label>
-                </li>
-              </ul>
+            <div class="competition__buttons block">
+              <button class="competition__button competition__button--green button" type="submit" name="send">Отправить форму</button>
+              <small class="competition__notification">
+                <sup class="competition__required">*</sup> — обязательные <span class="competition__notification competition__notification--full">для заполнения</span> поля
+              </small>
             </div>
-            <div class="competition__feedback">
-              <h3 class="competition__title">Опишите свои эмоции</h3>
-              <textarea class="competition__input competition__input--feedback" name="feedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-            <button class="competition__button competition__button--green" type="submit" name="send">Отправить форму</button>
           </form>
-          <small class="competition__notification">
-              <sup class="competition__required">*</sup> — обязательные поля
-          </small>
         </div>
       </section>
     </main>

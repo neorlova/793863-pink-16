@@ -1,29 +1,26 @@
 .inner() {
+  min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
+  .desktop({
+    max-width: @desktop-width;
     padding-left: 120px;
     padding-right: 120px;
-  }
+  });
 }
 
-.desktop (@rules) {
-  @media (min-width:  1200px) {
+.tablet (@rules) {
+  @media (min-width: @tablet-width) and (max-width: @tablet-max-width){
     @rules();
   }
 }
 
-.competition__inner (){
-  margin-left: 22px;
-  margin-right: 22px;
+.desktop (@rules) {
+  @media (min-width: @desktop-width) {
+    @rules();
+  }
 }
 
 

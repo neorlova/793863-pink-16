@@ -1,24 +1,19 @@
 .features {
   background-color: @alt-bg-color;
 }
-.features__wrapper {
+.features__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: @tablet-width){
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+  .tablet ({
     margin: 0 auto;
-  }
+  });
 
-  @media (min-width: @desktop-width){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
+  .desktop ({
+    margin: 0 auto;
+    });
 }
 
 .features__header {
@@ -34,14 +29,14 @@
   padding-bottom: 30px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width){
+  .tablet ({
     text-align: center;
     font-size: 40px;
-  }
+  });
 
-  @media (min-width: @desktop-width){
+  .desktop ({
     font-size: 50px;
-  }
+  });
 }
 
 .features__list {

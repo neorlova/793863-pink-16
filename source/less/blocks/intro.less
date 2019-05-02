@@ -25,26 +25,32 @@
   background-position: left bottom;
   height: 395px;
 
-    @media (min-width: @tablet-width){
+    .tablet ({
       display: flex;
       flex-direction: column;
       background-image: url(img/iphone-hand-tablet@1x.png);
       background-position: center;
       background-repeat: no-repeat;
-    }
+    });
 
-    @media (min-width: @desktop-width){
+    .desktop ({
       background-image: url(img/iphone-hand-desktop@1x.png);
       background-repeat: no-repeat;
-    }
+    });
   }
 
 
 .intro__inner{
 
-  @media (min-width: @tablet-width){
+  margin-bottom: 54px;
+  .tablet ({
     height: 100%;
-  }
+    margin-bottom: 94px;
+  });
+
+  .desktop ({
+    margin-bottom: 100px;
+  });
 }
 
 .intro__title {

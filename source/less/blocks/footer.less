@@ -3,29 +3,29 @@
   &--index {
     display: none;
   }
-  @media (min-width: @tablet-width){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    box-sizing: border-box;
-    max-width: 660px;
-  }
-  @media (min-width: @desktop-width){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 960px;
-  }
 }
 
 .footer__inner {
+  .inner ();
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 41px;
+  padding-bottom: 39px;
+
+  .tablet ({
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  });
+
+  .desktop ({
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  });
 }
 
 .footer__copyright {
