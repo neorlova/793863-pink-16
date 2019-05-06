@@ -10,13 +10,26 @@
 }
 
 .button--white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: @text-color-alt;
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid white;
   border-radius: 25px;
+  margin-bottom: 40px;
+
+  .tablet ({
+    font-size: 18px;
+    line-height: 18px;
+    width: 300px;
+    margin-bottom: 52px;
+  });
 
   .desktop ({
     font-size: 21px;
     line-height: 18px;
+    width: 300px;
+    margin-bottom: 75px;
   });
 }

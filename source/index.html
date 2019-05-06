@@ -8,11 +8,11 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header--menu-open">
       <div class="header__wrapper">
         <div class="header__topbar">
           <a class="header__logo">
-            <svg class="header__logo-desktop" width="147" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <svg class="header__logo-desktop" width="64" height="44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -40,7 +40,7 @@
                 </g>
               </g>
             </svg>
-            <svg class="header__logo-tablet" width="147" height="40"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <svg class="header__logo-tablet" width="64" height="44"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -98,18 +98,15 @@
     <main class="page">
       <h1 class="visually-hidden">Pink</h1>
       <section class="intro intro--index">
-        <div class="intro__img-index">
-          <div class="intro__inner intro__inner--index">
-            <h2 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h2>
-          </div>
-        </div>
+        <div class="intro__img-index"></div>
       </section>
       <section class="download">
         <div class="download__inner">
+          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
           <a class="button button--white" href="https://www.apple.com/lae/itunes/">Скачать приложение</a>
           <div class="download__description apps">
-            <ul class="apps__list">
-              <div class="apps__inner">
+            <div class="apps__inner">
+              <ul class="apps__list">
                 <li class="apps__item">
                   <a class="apps__link" href="https://www.apple.com/lae/itunes/" target="_blank">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
@@ -139,9 +136,9 @@
                     </svg>
                   </a>
                 </li>
-              </div>
-            </ul>
-            <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </ul>
+              <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
       </section>
@@ -223,17 +220,17 @@
               <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
             </svg>
           </button>
-          <div class="review__toggles slider-toggles">
-            <button class="slider__toggles-item slider__toggles-item--active" type="button">
-              <span class="visually-hidden">1</span>
-            </button>
-            <button class="slider__toggles-item" type="button">
-              <span class="visually-hidden">2</span>
-            </button>
-            <button class="slider__toggles-item" type="button">
-              <span class="visually-hidden">3</span>
-            </button>
-          </div>
+        </div>
+        <div class="review__toggles slider-toggles">
+          <button class="slider__toggles-item slider__toggles-item--active" type="button">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="slider__toggles-item" type="button">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="slider__toggles-item" type="button">
+            <span class="visually-hidden">3</span>
+          </button>
         </div>
       </section>
       <section class="offer">
@@ -326,17 +323,17 @@
                 </td>
               </tr>
             </table>
-          </div>
-          <div class="offer__toggles slider-toggles">
-            <button class="slider__toggles-item" type="button">
-              <span class="visually-hidden">1</span>
-            </button>
-            <button class="slider__toggles-item slider__toggles-item--active" type="button">
-              <span class="visually-hidden">2</span>
-            </button>
-            <button class="slider__toggles-item" type="button">
-              <span class="visually-hidden">3</span>
-            </button>
+            <div class="offer__toggles slider-toggles">
+              <button class="slider__toggles-item" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
+              <button class="slider__toggles-item slider__toggles-item--active" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
+              <button class="slider__toggles-item" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -352,16 +349,16 @@
           </div>
           <div class="contact__inner">
             <ul class="contact__list">
-              <li class="contact__item">
+              <li class="contact__item contact__item--call">
                 <h3 class="contact__title">Звоните:</h3>
                 <a class="contact__path" href="tel:+78125556666">+7 (812) 555-66-66</a>
               </li>
-              <li class="contact__item">
+              <li class="contact__item contact__item--photo__description">
                 <h3 class="contact__title">Пишите:</h3>
                 <a class="contact__path" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
               <li class="contact__item">
-                <h3 class="contact__title">Приезжайте в гости:</h3>
+                <h3 class="contact__title contact__item--adress">Приезжайте в гости:</h3>
                 <a class="contact__path" href="http://maps.google.com/?q=Bolshaya+Konyushennaya+Street,+19%2F8,+Sankt-Peterburg,+Russia,+191186" target="_blank">ул. Большая<br>Конюшенная, 19/8</a>
               </li>
             </ul>
