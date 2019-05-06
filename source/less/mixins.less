@@ -1,0 +1,47 @@
+.inner() {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  .desktop({
+    max-width: @desktop-width;
+    padding-left: 120px;
+    padding-right: 120px;
+  });
+}
+
+.tablet (@rules) {
+  @media (min-width: @tablet-width) and (max-width: @tablet-max-width){
+    @rules();
+  }
+}
+
+.desktop (@rules) {
+  @media (min-width: @desktop-width) {
+    @rules();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.with-border() {
+  border: 2px solid @alt-bg-color;
+}

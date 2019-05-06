@@ -1,0 +1,163 @@
+.features {
+  background-color: @alt-bg-color;
+
+  .tablet ({
+  margin-bottom: 59px;
+  });
+}
+.features__inner {
+  .inner();
+  margin: 0 auto;
+
+  .tablet ({
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  });
+
+  .desktop ({
+
+    });
+}
+
+.features__header {
+  margin-top: 50px;
+}
+
+.features__tagline {
+  font-weight: 300;
+  font-size: 24px;
+  color: @text-color-main;
+  text-align: center;
+  background-color: @text-color-alt;
+  padding-bottom: 30px;
+  margin: 0 auto;
+
+  .tablet ({
+    text-align: center;
+    font-size: 40px;
+  });
+
+  .desktop ({
+    font-size: 50px;
+  });
+}
+
+.features__list {
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+  margin-bottom: 0px;
+
+  .tablet ({
+    order: 2;
+    text-align: left;
+    margin-left: 41px;
+  });
+
+  .desktop ({
+    display: flex;
+    justify-content: space-between;
+  });
+}
+
+.features__item {
+  max-width: 259px;
+  margin: 0 auto;
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+
+  .tablet ({
+    max-width: 310px;
+  });
+
+
+  .desktop ({
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  });
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 18px;
+
+
+  .desktop ({
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    order: 2;
+  });
+}
+
+.features__description {
+  color: @text-color-main;
+
+  .desktop ({
+    font-size: 18px;
+    line-height: 30px;
+    order: 3;
+  });
+}
+
+.features__img {
+  .desktop ({
+    order: 1;
+  });
+}
+
+.features__screenshot {
+  display: none;
+
+    .desktop ({
+      display: block;
+      width: 100%;
+      order: 1;
+      &:nth-child(2) {
+        margin-left: 130px;
+        margin-right: 130px;
+      }
+    });
+}
+
+.features__hero {
+  height: 277px;
+  overflow: hidden;
+
+  .tablet ({
+    height: 100%;
+  });
+
+  .desktop ({
+    display: none;
+  });
+}
+
+.features__hero-mobile {
+  display: block;
+  margin: 0 auto;
+
+  .tablet ({
+    display: none;
+  });
+
+  .desktop ({
+    display: none;
+  });
+}
+
+.features__hero-tablet {
+  display: none;
+
+  .tablet ({
+    display: block;
+  });
+
+ .desktop ({
+   display: none;
+  });
+}

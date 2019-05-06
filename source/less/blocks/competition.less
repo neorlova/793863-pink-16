@@ -1,0 +1,514 @@
+.competition {
+  text-transform: uppercase;
+}
+
+.competition__inner {
+  .inner ();
+  margin-bottom: 62px;
+  position: relative;
+
+  .tablet ({
+    margin-bottom: 68px;
+  });
+
+  .desktop ({
+    margin-bottom: 66px;
+  });
+}
+
+.competition__form {
+
+  .tablet ({
+    display: flex;
+    flex-direction: column;
+  });
+
+  .desktop ({
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  });
+}
+
+.competition__full-name {
+
+
+  .tablet ({
+    border: none;
+    order: 1;
+  });
+
+  .desktop ({
+    border: none;
+    width: 48%;
+    order: 1;
+  });
+}
+
+.competition__label {
+  padding-left: 22px;
+  padding-bottom: 12px;
+
+  &--full-name {
+
+    .tablet ({
+      padding: 0;
+    });
+
+    .desktop ({
+      padding: 0;
+    });
+  }
+}
+
+.competition__row {
+  display: flex;
+  flex-direction: column;
+
+  &--full-name {
+
+    .tablet ({
+      flex-direction: row;
+      align-items: center;
+    });
+
+    .desktop ({
+      flex-direction: row;
+      align-items: center;
+    });
+  }
+
+  &--contacts {
+
+    .tablet ({
+      display: flex;
+      flex-direction: column-reverse;
+    });
+
+    .desktop ({
+      display: flex;
+      flex-direction: column-reverse;
+      flex-grow: 1;
+      margin-right: 37px;
+      margin-left: 37px;
+    });
+  }
+}
+
+.competition__achievement {
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: @alt-bg-color;
+  padding: 0 20px;
+
+  .tablet ({
+    background-color: @text-color-alt;
+    order: 4;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  });
+
+  .desktop ({
+    width: 100%;
+    background-color: @text-color-alt;
+    order: 4;
+    margin-left: 0;
+    margin-right: 0;
+  });
+}
+
+.competition__achievement-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0 auto;
+
+  .tablet ({
+    margin: 0;
+    padding-left: 60px;
+  });
+
+  .desktop ({
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  });
+}
+
+.competition__achievement-item {
+  margin-bottom: 44px;
+
+  .desktop ({
+    width: 30%;
+  });
+}
+
+.competition__apps {
+  background-color: @alt-bg-color;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 0;
+
+  .tablet ({
+    background-color: @text-color-alt;
+    order: 2;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 49px;
+  });
+
+  .desktop ({
+    width: 48%;
+    background-color: @text-color-alt;
+    order: 2;
+    margin-right: 0;
+    margin-left: 0;
+  });
+}
+
+.competition__apps-list {
+  list-style: none;
+  padding-left: 0;
+  width: 300px;
+  margin: 0 auto;
+
+  .tablet ({
+    padding-left: 59px;
+    margin: 0;
+  });
+}
+
+.competition__apps-item {
+  text-transform: none;
+}
+
+.competition__description {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  text-transform: none;
+
+  .tablet ({
+    padding-bottom: 73px;
+    max-width: 487px;
+    font-size: 18px;
+    line-height: 30px;
+  });
+
+  .desktop ({
+    padding-bottom: 76px;
+    max-width: 820px;
+    font-size: 18px;
+    line-height: 30px;
+  });
+}
+
+.competition__contacts {
+
+  .tablet ({
+    order: 3;
+    padding-left: 60px;
+    padding-right: 60px;
+  });
+
+  .desktop ({
+    width: 100%;
+    order: 3;
+    padding: 0 23px 22px;
+  });
+}
+
+.competition__title {
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: @main-color;
+  margin-top: 40px;
+  padding-left: 0;
+
+  .tablet ({
+    font-size: 14px;
+    line-height: 30px;
+    background-color: @text-color-alt;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-top: -16px;
+  });
+
+  .desktop ({
+    font-size: 14px;
+    line-height: 30px;
+    background-color: @text-color-alt;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: -16px;
+  });
+
+  &--contacts {
+    display: none;
+
+    .tablet ({
+      display: block;
+    });
+
+    .desktop ({
+      display: block;
+    });
+  }
+
+  &--main {
+
+    margin-bottom: 45px;
+  }
+
+  &--alt {
+    margin-bottom: 38px;
+  }
+}
+
+.competition__container {
+
+  &--contacts {
+
+    .desktop ({
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    });
+  }
+}
+
+.competition__label {
+  color: @main-color;
+  display: block;
+}
+
+.competition__field {
+  font-size: 18px;
+  line-height: 30px;
+  height: 59px;
+  width: 100%;
+  margin-bottom: 26px;
+  border: @form-border;
+  padding-left: 20px;
+
+  &--full-name {
+
+    .tablet ({
+      margin-left: 22px;
+    });
+
+    .desktop ({
+      margin-left: 22px;
+    });
+  }
+
+  &--contacts {
+
+    .tablet ({
+      margin-bottom: 20px;
+    });
+
+    .desktop ({
+      margin-bottom: 20px;
+    });
+  }
+
+  &--feedback {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    height: 197px;
+    padding-top: 24px;
+    padding-left: 0;
+    border: @form-border;
+
+    .tablet ({
+      margin-bottom: 0;
+    });
+
+    .desktop ({
+      text-align: left;
+    });
+  }
+}
+.checkbox {
+position: relative;
+padding-left: 20px;
+}
+
+.competition__checkbox {
+  display: none;
+}
+
+.competition__checkbox-label {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-transform: none;
+
+
+  .competition__checked {
+    display: none;
+  }
+}
+
+.competition__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 35px;
+  width: 35px;
+  background-color: @text-color-alt;
+  margin-right: 33px;
+
+  .tablet ({
+    border: @form-border;
+  });
+
+  .desktop ({
+    border: @form-border;
+  });
+}
+
+.competition__checkbox:checked + .competition__checkbox-label {
+  fill: @main-color;
+  .competition__checked {
+    display: block;
+  }
+}
+
+.competition__selection-label {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 33px;
+  padding-bottom: 34px;
+  font-size: 18px;
+}
+
+.competition__radio-button {
+  display: none;
+}
+
+.competition__radio-checked {
+  display: none;
+  height: 11px;
+  width: 11px;
+  background-color: @main-color;
+  border-radius: 50%;
+}
+
+.competition__radio-button:checked + .competition__selection-label {
+  .competition__radio-checked {
+    display: block;
+  }
+}
+
+.competition__radio-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 37px;
+  width: 37px;
+  border: @form-border;
+  border-radius: 50%;
+  background-color: @text-color-alt;
+  margin-right: 33px;
+}
+
+.competition__feedback {
+
+  .tablet ({
+    padding: 0 60px 53px;
+    margin-bottom: 68px;
+    order: 5;
+  });
+
+  .desktop ({
+    padding: 0 60px 45px;
+    margin-bottom: 68px;
+    order: 5;
+    width: 100%;
+  });
+}
+
+.competition__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .tablet ({
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    order: 6;
+  });
+
+  .desktop ({
+    border: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    order: 6;
+  });
+}
+
+.competition__button--green {
+  color: @text-color-alt;
+  font-size: 18px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #2aab6d;
+
+  .tablet ({
+    width: 296px;
+  });
+
+  .desktop ({
+    width: 296px;
+  });
+}
+
+.competition__notification {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 44px 48px 58px;
+
+  .tablet ({
+    padding: 0;
+  });
+
+  .desktop ({
+    padding: 0;
+  });
+
+  &--full {
+    display: none;
+
+    .tablet ({
+      display: none;
+      padding: 0;
+    });
+
+    .desktop ({
+      display: inline;
+      line-height: 30px;
+      padding: 0;
+    });
+  }
+}
+
+.competition__required {
+  color: @main-color;
+}

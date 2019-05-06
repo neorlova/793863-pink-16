@@ -1,0 +1,64 @@
+.download {
+  padding-top: 28px;
+  background-color: @bg-color;
+
+  .tablet ({
+    position: absolute;
+    background-color: transparent;
+    top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  });
+
+  .desktop ({
+    position: absolute;
+    background-color: transparent;
+    top: 170px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  });
+}
+
+.download__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tablet ({
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  });
+}
+
+.download__title {
+  display: none;
+
+  .tablet ({
+    display: block;
+    text-align: center;
+    max-width: 186px;
+    color: @text-color-alt;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 0;
+    margin-bottom: 39px;
+  });
+
+  .desktop ({
+    display: block;
+    text-align: center;
+    max-width: 231px;
+    color: @text-color-alt;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 0;
+    margin-bottom: 61px;
+  });
+}

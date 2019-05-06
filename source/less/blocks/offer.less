@@ -1,0 +1,134 @@
+
+.offer {
+  background-color: @alt-bg-color;
+}
+
+.offer__inner {
+  .inner ();
+  overflow-x: hidden;
+  margin: 0 auto;
+
+  .tablet ({
+    padding-top: 84px;
+    padding-bottom: 70px;
+  });
+
+  .desktop ({
+    padding-top: 146px;
+    padding-bottom: 98px;
+  });
+}
+
+.offer__table {
+  margin: 0 auto 25px;
+  border-collapse: collapse;
+
+  .tablet ({
+    margin: 0 auto;
+  });
+
+  .desktop ({
+    margin: 0 auto;
+  });
+}
+
+.offer__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: @text-color-alt;
+  text-align: center;
+}
+
+.offer__price {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.offer__header {
+  background-color: @text-color-main;
+  height: 94px;
+  width: 276px;;
+  border-left: 1px solid @text-color-alt;
+  border-right: 1px solid @text-color-alt;
+  position: relative;
+
+  .tablet ({
+    min-width: 152px;
+  });
+
+  .desktop ({
+    min-width: 233px;
+  });
+}
+
+.offer__hit {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.offer__description {
+  color: @text-color-main;
+  background-color: @text-color-alt;
+  line-height: 30px;
+  text-transform: uppercase;
+  height: 59px;
+  width: 276px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  padding-left: 20px;
+
+
+  .tablet ({
+    min-width: 152px;
+  });
+
+  .desktop ({
+    min-width: 234px;
+  });
+}
+
+.offer__img {
+  background-color: @text-color-alt;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  width: 276px;
+  box-sizing: border-box;
+
+  .tablet ({
+    width: 152px;
+  });
+
+  .desktop ({
+    width: 233px;
+  });
+}
+
+.offer__toggles {
+  display: block;
+  text-align: center;
+  padding-bottom: 25px;
+  margin: 0 auto;
+
+  .tablet ({
+    display: none;
+  });
+
+  .desktop ({
+    display: none;
+  });
+}
+
+.offer__checked {
+  fill: #3dc644;
+  width: 31px;
+  height: 21px;
+}
+
+.offer__unchecked {
+  fill: #f25b26;
+  width: 27px;
+  height: 26px;
+}
